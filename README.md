@@ -17,7 +17,7 @@ docker pull youni04/final
 ```
 ## To do the analysis, you can run 
 ```
-docker run -v path/to/output:/project/output -it ziyint/final_proj
+docker run -v path/to/output:/project/output -it youni04/final
 ```
 in command line. The `path/to/output` should change to your local path for output.
 
