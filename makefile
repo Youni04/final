@@ -1,6 +1,6 @@
 ## project.html  : Generate final analysis report.
 # rule for making report  
-project.html: data/AID_743085_datatable_all.csv R/project.rmd 
+R/project.html: data/AID_743085_datatable_all.csv R/project.Rmd 
 	Rscript -e "rmarkdown::render('R/project.Rmd', output_file = '../output/project.html')"
 
 ## Plots of analysis
