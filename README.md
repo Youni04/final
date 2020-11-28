@@ -27,8 +27,12 @@ docker run -it youni04/final /bin/bash
 
 cd project
 
-make project.html
+make R/project.html
+
 ```
+OR just `make` for the last step.
+
+
 This will create a file called `project.html` output in your directory that contains the results.
 
  
