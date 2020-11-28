@@ -2,7 +2,7 @@
 
 # get environment variable to determine which figure to make
 
-df <- read.csv("../data/AID_743085_datatable_all.csv",header = FALSE)
+df <- read.csv('../data/AID_743085_datatable_all.csv',header = FALSE)
 data<-df[7:10492, c(2,28:40,42:43,68:80,82:83,107:119,121:122)]
 
 ## Summary
@@ -23,7 +23,7 @@ conc<-df[6,c(28:40,42:43)]
 
 conc_num<-as.numeric(conc)
 
-png("figs/figs.png")
+png("../figs/figs.png")
 	plot(log10(conc_num),average_value[,1], xlab = "concentration", ylab = "resposnse")
 	plot(log10(conc_num),average_value[,2], xlab = "concentration", ylab = "resposnse")
 	
